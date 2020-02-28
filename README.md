@@ -35,7 +35,7 @@ https://github.com/Lou08/Harry-Potter-IronHack
 
 # Trello
 
-https://trello.com/b/7JMCu2t2proyecto-harry-potter
+https://trello.com/b/7JMCu2t2/proyecto-harry-potter
 
 # Agradecimientos
 
