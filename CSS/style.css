@@ -1,0 +1,214 @@
+/****************** RESET STYLE AND NEW CURSOR ****************************/
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+    
+}
+
+body{
+    font-family: 'Caveat';
+    font-size: 25px;
+
+}
+
+/***************** HEADER **************************************************/
+.nav-bar{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+   
+
+}
+#logo-harry-potter{
+    display: flex;
+    
+}
+
+#logo-harry-potter img{
+
+    height: 80px;
+}
+
+#burguer-btn{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    
+    
+    
+}
+.burger-logo{
+    display: flex;
+}
+
+.navbar-top{
+    display: flex;
+    justify-content: space-between;
+}
+/**************************     MENU DROP DOWN *************************************/
+.menu-style{
+    list-style-type: none;  
+    margin-top: 280px;
+}
+
+.drop-down-menu{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+
+}
+.drop-down-menu li:hover{
+    background-color: rgb(24, 3, 63);
+    display: block;
+}
+
+ul li:hover >ul{
+    display: block;
+    visibility: visible;
+    background-color:rgb(0, 0, 0);
+}
+.drop-down-menu a{
+    
+    
+    color: white;
+}
+.drop-down-menu a:hover{
+    background-color: rgb(24, 3, 63);
+    color: white;
+}
+
+.nav{
+
+    position: absolute;
+    right: -100%;
+    z-index: -999;
+}
+.mostrar{
+    right: 0;
+}
+
+/***************************** CONTENT *********************************/
+
+
+/************************************** REGISTRO *******************************************/   
+.registro{
+    padding-top: 100px;
+    padding-left: 200px;
+    
+}
+
+#griffindor-img{
+    height: 100px;
+    width: 100px;
+}
+#hufflepuff-img{
+    height: 100px;
+    width: 100px;
+}
+#ravenclaw-img{
+    height: 100px;
+    width: 100px;
+}
+#slytherin-img{
+    height: 100px;
+    width: 100px;
+}
+.peliculas{
+    height: 200px;
+    width: 200px;
+}
+#formulario-login{
+
+    margin-top: 300px;
+    margin-left: 300px;
+    display: flex;
+}
+.main-page{
+    background-image: url('../Imagenes/harry-potter-reboot-1550045805.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tarjeta{
+    width: auto;
+    height: auto;
+    background-color: rgba(238, 234, 176, 0.8);
+ 
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+/********************** CAMBIAR A 1024PX ********************************/
+@media screen and (min-width: 900px){
+
+    h1{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    h2{
+        padding-top: 30px;
+    }
+.nav{
+    right: 0;
+}
+
+#burguer-btn{
+    display: none;
+
+}
+
+.menu-style{
+    display: flex;
+    margin-top: 0;
+    
+   
+}
+.menu-style li{
+    padding-right: 20px;
+    list-style-type: none;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.main-page{
+    background-image: url('/Imagenes/harrypotterBack.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tarjeta{
+
+    width: 80%;
+    height: 70%;
+    background-color: rgb(255, 255, 255, 0.7);
+   
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+.registro{
+    display: contents;
+}
+}
