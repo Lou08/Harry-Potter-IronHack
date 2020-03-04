@@ -12,10 +12,7 @@ body{
     font-size: 25px;
 
 }
-h1{
-    padding-top: 130px;
-    padding-left: 30px;
-}
+
 /***************** HEADER **************************************************/
 .nav-bar{
     display: flex;
@@ -41,7 +38,7 @@ h1{
     height: 60px;
     width: 60px;
     margin-right: 20px;
-    z-index: 999;
+    
     
     
 }
@@ -77,7 +74,7 @@ ul li:hover >ul{
 }
 .drop-down-menu a{
     
-    background-color: black;
+    
     color: white;
 }
 .drop-down-menu a:hover{
@@ -88,7 +85,8 @@ ul li:hover >ul{
 .nav{
 
     position: absolute;
-    right: -100%
+    right: -100%;
+    z-index: -999;
 }
 .mostrar{
     right: 0;
@@ -145,8 +143,8 @@ ul li:hover >ul{
 .tarjeta{
     width: auto;
     height: auto;
-    background-color: rgb(238, 234, 176);
-    opacity: 0.5;
+    background-color: rgba(238, 234, 176, 0.8);
+ 
     margin-top: 200px;
     text-align: center;
     border-radius: 50px;
@@ -155,6 +153,13 @@ ul li:hover >ul{
 /********************** CAMBIAR A 1024PX ********************************/
 @media screen and (min-width: 900px){
 
+    h1{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    h2{
+        padding-top: 30px;
+    }
 .nav{
     right: 0;
 }
@@ -182,11 +187,11 @@ body{
 }
 
 .main-page{
-    background-image: url(./Imagenes/harry-potter-reboot-1550045805.jpg);
+    background-image: url('../Imagenes/harrypotterBack.jpg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,15 +201,14 @@ body{
 
     width: 80%;
     height: 70%;
-    background-color: rgb(238, 234, 176);
-    opacity: 0.5;
+    background-color: rgb(255, 255, 255, 0.7);
+   
     margin-top: 200px;
     text-align: center;
     border-radius: 50px;
+    margin-bottom: 40px;
 }
 .registro{
     display: contents;
 }
-}
-
 }
