@@ -18,9 +18,15 @@ signUpButton.addEventListener("click", function(event){
     deleteErrors();
     
     if (checkValidUser()){
-        console.log("user registered");
+        
         createUser(userName.value, email.value, password.value);
-        window.location.href='index.html' // si se crea usuario va a la pagina de juego
+        let bienve = document.createElement('div')
+        form.appendChild(bienve)
+        bienve.innerHTML = ('Usuario creado correctamente')
+        setTimeout(function(){
+            window.location.href='index.html' // si se crea usuario va a la pagina de juego
+        },2000)
+        
     };
 })
 
