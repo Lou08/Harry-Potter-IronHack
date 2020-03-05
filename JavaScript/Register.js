@@ -20,7 +20,7 @@ signUpButton.addEventListener("click", function(event){
     if (checkValidUser()){
         console.log("user registered");
         createUser(userName.value, email.value, password.value);
-        window.location.href='./juego.html' // si se crea usuario va a la pagina de juego
+        window.location.href='index.html' // si se crea usuario va a la pagina de juego
     };
 })
 
