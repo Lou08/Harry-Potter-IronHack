@@ -3,7 +3,7 @@ let login = document.getElementById('loginmail');
 let passwordLog = document.getElementById('passwordtext');
 let botonLog = document.getElementById('boton-login');
 let userDB = JSON.parse(localStorage.getItem('users'));
-let form = document.getElementsById("formlogin");
+let form = document.getElementById("formlogin");
 
 botonLog.addEventListener('click', function (event) {
     event.preventDefault();
@@ -19,7 +19,7 @@ if(usuarioActual.checkmail()){
     
     let div = document.createElement("div")
     div.innerHTML = ('usuario no existe')
-    form.insertBefore();
+    form.appendChild(div);
 }
    
 
