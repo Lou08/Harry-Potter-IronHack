@@ -14,7 +14,15 @@ botonLog.addEventListener('click', function (event) {
     usuarioActual.password = passwordLog.value
 
 if(usuarioActual.checkmail()){
-    window.location.href='./juego.html'
+    
+    let div1 = document.createElement("div")
+    div1.innerHTML = (`Bienvenido ${usuarioActual.email}`)
+    form.appendChild(div1);
+    setTimeout(function(){
+        window.location.href='index.html'
+    },2000)
+    
+   
 }else{
     
     let div = document.createElement("div")
